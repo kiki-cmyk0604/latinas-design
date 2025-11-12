@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Latinas Design | Catálogo</title>
+ <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Belanosima' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles catalogo.css">
+</head>
+
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="logo">
+      <img src="logo pagina latinas.png" alt="Logo Latinas Design">
+    </div>
+
+    <nav class="menu">
+      <a href="latinas web index .html">Inicio</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="nosotras.html">Nosotras</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="iconos">
+      <a href="#" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></a>
+      <a href="#" aria-label="Carrito de compras"><i class="fa-solid fa-bag-shopping"></i></a>
+    </div>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+    <section class="intro">
+      <h1>Nuestro catálogo</h1>
+      <h2>¡Encuentra el jean perfecto que grita tu nombre! Diseños que celebran tus curvas.</h2>
+    </section>
+
+    <!-- ===== CONTENEDOR DE CATÁLOGO ===== -->
+    <section class="catalogo-container">
+
+      <!-- ===== FILTROS ===== -->
+      <div class="filtros">
+        <h2>Filtra tu búsqueda</h2>
+
+        <!-- Estilo de jean -->
+        <div class="filtro">
+          <h3>Estilo de jean</h3>
+          <select name="jeans" id="jeans">
+            <option value="todos">Todos</option>
+            <option value="baggy">Baggy Jeans</option>
+            <option value="skinny">Skinny Jeans</option>
+            <option value="recto">Recto</option>
+          </select>
+        </div>
+
+        <!-- Tallas -->
+        <div class="filtro">
+          <h3>Tallas</h3>
+          <div class="tallas">
+            <label><input type="radio" name="talla" value="34"> 34</label>
+            <label><input type="radio" name="talla" value="36"> 36</label>
+            <label><input type="radio" name="talla" value="38"> 38</label>
+            <label><input type="radio" name="talla" value="40"> 40</label>
+            <label><input type="radio" name="talla" value="42"> 42</label>
+            <label><input type="radio" name="talla" value="44"> 44</label>
+          </div>
+        </div>
+
+        <!-- Colores -->
+        <div class="filtro">
+          <h3>Color</h3>
+          <div class="colores">
+            <button class="color azul" title="Azul"></button>
+            <button class="color negro" title="Negro"></button>
+            <button class="color gris" title="Gris"></button>
+            <button class="color blanco" title="Blanco"></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== PRODUCTOS ===== -->
+      <div class="productos">
+        <div class="grid-productos">
+          <article class="producto">
+            <img src="jeans sastrero.png" alt="Jeans sastreros color azul">
+            <h3>Jeans Sastreros</h3>
+            <p>150 Bs</p>
+          </article>
+
+          <article class="producto">
+            <img src="skinny jeans .png" alt="Skinny jeans">
+            <h3>Skinny Jeans</h3>
+            <p>200 Bs</p>
+          </article>
+
+          <article class="producto">
+            <img src="baggy jeans.png" alt="Baggy jeans claros">
+            <h3>Baggy Jeans</h3>
+            <p>280 Bs</p>
+          </article>
+
+          <article class="producto">
+            <img src="mom jean.png" alt="Mom jeans azules">
+            <h3>Mom Jeans</h3>
+            <p>280 Bs</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+   <footer class="footer">
+  <div class="footer-content">
+   
+    <div class="footer-left">
+      <img src="logo pagina latinas.png" alt="Logo Latinas Design" class="footer-logo" role="img" aria-label="Logo del sitio Latinas Design">
+      <p class="footer-text">
+        Moda boliviana que celebra tu 
+        autenticidad.<br>
+        Jeans al por mayor y menor.
+      </p>
+    </div>
+
+
+    <nav class="footer-nav">
+      <a href="#">Política de Privacidad</a>
+      <span>·</span>
+      <a href="#">Términos y Condiciones</a>
+    </nav>
+
+  
+    <div class="footer-social">
+      <a href="https://www.instagram.com/latinasdesign.bo/" aria-label="Ir a Instagram">
+        <img src="insta logo.png" alt="Instagram" class="social-icon">
+      </a>
+      <a href="https://www.facebook.com/LatinasDesign.bo/" aria-label="Ir a Facebook">
+        <img src="face logo.png" alt="Facebook" class="social-icon">
+      </a>
+    </div>
+  </div>
+
+  <hr>
+
+  <p class="footer-copy">
+    © 2024 Latinas Design. Todos los derechos reservados. Hecho con Ven Bolivia.
+  </p>
+</footer>
+</body>
+</html>
