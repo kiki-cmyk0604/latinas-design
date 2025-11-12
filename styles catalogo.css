@@ -1,0 +1,368 @@
+/* ===== RESETEO GENERAL ===== */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* evita scroll horizontal inesperado */
+}
+
+body {
+  font-family: 'Bebas Neue', 'Belanosima', sans-serif;
+
+}
+
+
+/* ===== HEADER ===== */
+header {
+  background-color: #e3b5c4;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 60px;
+  height: 100px;
+}
+
+.logo {
+  width: auto;
+  height: auto;
+  display: block;
+  padding-left: 20px;
+}
+
+/* ===== MENÚ ===== */
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #934f5c;
+  font-weight: bold;
+  font-size: 30px;
+  transition: color 0.3s;
+ transform: translate(-20px,-20px);
+}
+.menu a:hover {
+  color: #2b1f22;
+}
+
+/* ===== ICONOS HEADER ===== */
+.iconos {
+  display: flex;
+  gap: 20px;
+}
+
+.iconos a {
+  background-color: #caa32b;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  font-size: 28px;
+  transform: translateY(-20px);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.iconos a:hover {
+  background-color: #b18c20;
+  transform: scale(1.05);
+}
+
+/* ===== INTRO ===== */
+.intro h1 {
+  text-align: center;
+  font-family: 'Bebas Neue';
+  font-size: 60px;
+  color: #AD5B67;
+  letter-spacing: 1px;
+}
+
+.intro h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  color: #303030;
+  font-weight: lighter;
+}
+
+/* ===== CONTENEDOR CATÁLOGO ===== */
+.catalogo-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 60px;
+  padding: 40px 80px;
+}
+
+/* ===== FILTROS ===== */
+.filtros {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding: 20px;
+  flex-shrink: 0;
+}
+
+.filtros h2 {
+  color: #AD5B67;
+  font-size: 38px;
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+
+.filtro {
+  margin-bottom: 30px;
+}
+
+.filtro h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Estilo de selección */
+select {
+  width: 100%;
+  height: 40px;
+  padding: 8px 12px;
+  border-radius: 40px;
+  border: none;
+  background-color: #AD5B67;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ===== TALLAS ===== */
+.tallas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tallas label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  font-weight: 600;
+  color: #303030;
+  transition: all 0.2s ease;
+}
+
+.tallas input[type="radio"] {
+  display: none;
+}
+
+.tallas input[type="radio"]:checked + span,
+.tallas label:has(input:checked) {
+  background-color: #AD5B67;
+  color: #fff;
+}
+
+/* ===== COLORES ===== */
+.colores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.color {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.azul {
+  background-color: #007bff;
+}
+.negro {
+  background-color: #000;
+}
+.gris {
+  background-color: #808080;
+}
+.blanco {
+  background-color: #fff;
+  border: 2px solid #ccc;
+}
+
+.color:hover {
+  transform: scale(1.1);
+  border-color: #333;
+}
+
+/* ===== PRODUCTOS ===== */
+.productos {
+  flex: 1;
+  margin-bottom: 80px;
+}
+
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+}
+
+.producto {
+  background-color:#AD5B67;
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  display: block;
+}
+.producto:hover {
+  transform: scale(1.02);
+}
+
+.producto h3 {
+  
+  background-color: #AD5B67;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 50px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.producto p {
+font-family: 'bebas neue';
+  background-color: #AD5B67;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0 0 15px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #BF868B;
+  color: #ffffff;
+  padding: 40px 20px;
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+.footer-logo {
+  display: block;
+  margin: 0 0 15px 0;
+  max-width: 160px;
+}
+.footer-text {
+  font-weight: 800;
+  margin-bottom: 3px;
+  line-height: 1.5;
+  font-size: 24px;
+  width: 300px;
+  padding: 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.footer-nav {
+  margin: 10px 0 25px;
+  text-align: center;
+  transform: translateY(-115px);
+}
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0 10px;
+}
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+.footer-social {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transform: translate(-30px,-190px);
+}
+.social-icon {
+  width: 70px;
+  margin: 0 10px;
+  vertical-align: middle;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+.social-icon:hover {
+  opacity: 1;
+}
+.footer-copy {
+  color: #fff;
+  font-weight: 600;
+  margin: 0 10px;
+  font-size: 15px;
+  text-align: center;
+  transform: translateY(-100px);
+}
+.footer hr {
+  border: none;
+  border-top: 1px solid #fff;
+  width: 85%;
+  margin: 30px auto;
+  transform: translateY(-115px);
+}
+
+/* 7 — Media queries (responsive)*/
+@media (max-width: 767px) {
+  .header {
+    flex-direction: column; /* imagen arriba, texto abajo */
+    padding: 20px;
+  }
+  .header .texto h1 {
+    font-size: 42px;
+  }
+  .header .texto p {
+    font-size: 16px;
+  }
+  .card {
+    width: 90%;
+  }
+  .hablar h2 {
+    font-size: 36px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header .texto h1 {
+    font-size: 56px;
+  }
+  .header .texto p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1024px) {
+  .header .texto h1 {
+    font-size: 64px;
+  }
+}

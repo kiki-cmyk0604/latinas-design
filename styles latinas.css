@@ -1,0 +1,416 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* evita scroll horizontal inesperado */
+}
+
+body {
+  font-family: 'Bebas Neue', 'Belanosima', sans-serif; 
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tipografías h1..h6  */
+h1 {
+  font-weight: bold;
+  font-size: 140px;
+  display: flex;
+}
+h2 {
+  font-weight: bold;
+  font-size: 48px;
+  display: flex;
+}
+h3 {
+  font-weight: normal;
+  font-size: 35px;
+  display: flex;
+}
+h4 {
+  font-weight: normal;
+  font-size: 25px;
+  display: flex;
+}
+h5 {
+  font-weight: normal;
+  font-size: 20px;
+  display: flex;
+}
+h6 {
+  font-weight: normal;
+  font-size: 15px;
+  display: flex;
+}
+
+p {
+  font-family: 'Belanosima', sans-serif;
+  font-size: 32px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* 1 — Header (encabezado) */
+header {
+  background-color: #e3b5c4; 
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 60px;
+  height: 100px;
+}
+
+/* Logo dentro del header */
+.logo {
+  width: auto;
+  height: auto;
+  display: block;
+  padding-left: 20px;
+
+}
+
+/* opciones pagina */
+.menu {
+  display: flex;
+  gap: 40px;
+}
+.menu a {
+  text-decoration: none;
+  color: #934f5c;
+  font-weight: bold;
+  font-size: 30px;
+  transition: color 0.3s;
+ transform: translate(-20px,-20px);
+ 
+}
+.menu a:hover {
+  color: #2b1f22;
+}
+
+/* Iconos (búsqueda, carrito) */
+.iconos {
+  display: flex;
+  gap: 20px;
+}
+.iconos a {
+  background-color: #caa32b;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  font-size: 28px;
+  transform: translateY(-20px);
+  transition: transform 0.3s, background-color 0.3s;
+}
+.iconos a:hover {
+  background-color: #b18c20;
+  transform: scale(1.05);
+}
+
+/* 2 —  sección principal */
+.header {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.header img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.header .texto {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  color: white;
+  max-width: 500px;
+}
+.header .texto h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 120px;
+  font-weight: bold;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.header .texto p {
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+/* 3 — Destacados (cards) */
+.destacados {
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 20px;
+  box-sizing: border-box;
+}
+.destacados h2 {
+  color: #AD5C68;
+  font-size: 48px;
+  letter-spacing: 1px;
+  margin: 0 0 60px 0;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: #fff;
+  width: 335px;
+  border-radius: 8px;
+  box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+.card-text {
+  background-color: #E5BFC3;
+  padding: 22px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.25);
+}
+
+/* 4 — Sobre Latinas  */
+.sobre.latinas {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-image: url("cuadro nostras home.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  max-width: none;
+}
+.sobre.latinas h2 {
+  font-size: 60px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  z-index: 1;
+  text-align: center;
+}
+.parrafo-sobre p {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 600;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  z-index: 1;
+}
+
+.boton-sobre {
+  position: relative;
+  z-index: 1;
+}
+.boton-sobre button {
+  background-color: #E0B437;
+  border: none;
+  border-radius: 40px;
+  padding: 20px 60px;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.boton-sobre button:hover {
+  background-color: #d2a22d;
+}
+
+/* 5 — Hablar / Contacto */
+.hablar {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+.hablar h2 {
+  color: #AD5C68;
+  font-size: 72px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin: 0 0 40px 0;
+}
+.hablar .parrafo {
+  max-width: 850px;
+  margin: 0 auto 50px auto;
+}
+.hablar .parrafo p {
+  font-family: "Belanosima";
+  font-size: 26px;
+  margin: 0;
+  line-height: 1.6;
+  color: #333333;
+}
+.boton-contacto button {
+  display: inline-block;
+  background-color: #E0B437;
+  border: none;
+  border-radius: 40px;
+  padding: 20px 60px;
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+.boton-contacto a {
+  text-decoration: none;
+  color: white;
+}
+.boton-contacto button:hover {
+  background-color: #C2962F;
+}
+
+/* 6 — Footer */
+.footer {
+  background-color: #BF868B;
+  color: #ffffff;
+  padding: 40px 20px;
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+.footer-logo {
+  display: block;
+  margin: 0 0 15px 0;
+  max-width: 160px;
+}
+.footer-text {
+  font-weight: 800;
+  margin-bottom: 3px;
+  line-height: 1.5;
+  font-size: 24px;
+  width: 300px;
+  padding: 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.footer-nav {
+  margin: 10px 0 25px;
+  text-align: center;
+  transform: translateY(-115px);
+}
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0 10px;
+}
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+.footer-social {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transform: translate(-30px,-190px);
+}
+.social-icon {
+  width: 70px;
+  margin: 0 10px;
+  vertical-align: middle;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+.social-icon:hover {
+  opacity: 1;
+}
+.footer-copy {
+  color: #fff;
+  font-weight: 600;
+  margin: 0 10px;
+  font-size: 15px;
+  text-align: center;
+  transform: translateY(-100px);
+}
+.footer hr {
+  border: none;
+  border-top: 1px solid #fff;
+  width: 85%;
+  margin: 30px auto;
+  transform: translateY(-115px);
+}
+
+/* 7 — Media queries (responsive)*/
+@media (max-width: 767px) {
+  .header {
+    flex-direction: column; /* imagen arriba, texto abajo */
+    padding: 20px;
+  }
+  .header .texto h1 {
+    font-size: 42px;
+  }
+  .header .texto p {
+    font-size: 16px;
+  }
+  .card {
+    width: 90%;
+  }
+  .hablar h2 {
+    font-size: 36px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header .texto h1 {
+    font-size: 56px;
+  }
+  .header .texto p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1024px) {
+  .header .texto h1 {
+    font-size: 64px;
+  }
+}
+
